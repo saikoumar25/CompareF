@@ -21,6 +21,6 @@
     </testsuites>
     
     <logging>
-        <log type="coverage-html" target="../metrics/" title="alexbilbie/proton" charset="UTF-8" yui="true" highlight="true" lowUpperBound="60" highLowerBound="90"/>
+        <log type="coverage-html" target="metrics" title="alexbilbie/proton" charset="UTF-8" yui="true" highlight="true" lowUpperBound="60" highLowerBound="90"/>
     </logging>
 </phpunit>
