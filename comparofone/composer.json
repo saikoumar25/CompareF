@@ -1,0 +1,22 @@
+{
+	"name": "zdro/comparofone",
+	"type": "project",
+	"description": "Comparofone Project MIAGE",
+	"keywords": [
+		"comparofone",
+		"PHP"
+	],
+	"homepage": "https://github.com/Zdro/comparophone",
+	"license": "WTFPL",
+	"authors": [{
+		"name": "Rémi Zdrojewski",
+		"email": "zdrojewski.remi@gmail.com"
+	}],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"conflict": {},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0"
+	}
+}
