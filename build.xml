@@ -54,7 +54,7 @@
               <include name="*Test.php"/>
             </fileset>
           </batchtest>
-            <formatter type="xml" outfile="${project.basedir}/build/logfile.xml"/>
+            <formatter type="junit-xml" outfile="${project.basedir}/build/coverage/logfile.xml"/>
         </phpunit>
     </target>
 
