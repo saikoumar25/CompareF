@@ -48,14 +48,8 @@
         </phpmd>
     </target>
     <target name="phpunit">
-       <phpunit>
-            <testsuites>
-                <testsuite name="My Test Suite">
-                    <directory>${project.basedir}/tests</directory>
-                </testsuite>
-            </testsuites>
-        
-            <filter>
+       <phpunit file="${project.basedir}/tests">
+           <filter>
                 <whitelist>
                     <directory suffix=".php">${project.basedir}</directory>
                 </whitelist>
