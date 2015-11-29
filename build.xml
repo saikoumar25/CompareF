@@ -44,7 +44,7 @@
     
     <target name="phpmd">
         <phpmd file="${project.basedir}/${source}">
-            <formatter type="xml" outfile="${project.basedir}/build/phpmd.xml" />
+            <logger type="xml" outfile="${project.basedir}/build/phpmd.xml" />
         </phpmd>
     </target>
     <target name="phpunit">
