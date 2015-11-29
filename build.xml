@@ -48,7 +48,7 @@
         </phpmd>
     </target>
     <target name="phpunit">
-       <phpunit printsummary="true" configuration="${project.basedir}/phpunit.xml"/>
+       <phpunit printsummary="true" configuration="${project.basedir}/tests/phpunit.xml"/>
     </target>
 
 </project>
