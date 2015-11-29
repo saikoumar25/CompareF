@@ -9,7 +9,8 @@
 	        "phing/phing": "2.*",
 	        "phpdocumentor/phpdocumentor": "~2.8",
                 "pdepend/pdepend": "~2.0",
-                "phploc/phploc": "~2.1"
+                "phploc/phploc": "~2.1",
+                "phpmd/phpmd" : "@stable"
 
 	}
 }
