@@ -8,12 +8,8 @@
 		"phpunit/phpunit": "~4.0",
 	        "phing/phing": "2.*",
 	        "phpdocumentor/phpdocumentor": "~2.8",
-	        "squizlabs/php_codesniffer": "~2.3",
                 "pdepend/pdepend": "~2.0",
-                "sebastian/phpcpd": "~2.0",
-                "mayflower/php-codebrowser": "~1.1",
-                "phploc/phploc": "~2.1",
-        	"phpmd/phpmd" : "@stable"
+                "phploc/phploc": "~2.1"
 
 	}
 }
