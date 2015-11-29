@@ -48,7 +48,7 @@
         </phpmd>
     </target>
     <target name="phpunit">
-        <exec logoutput="true" dir="${project.basedir}/${source}/tests" command="phpunit" escape="false" />
+        <exec logoutput="true" dir="${project.basedir}/tests" command="phpunit" escape="false" />
     </target>
 
 </project>
