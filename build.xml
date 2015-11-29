@@ -48,7 +48,7 @@
         </phpmd>
     </target>
     <target name="phpunit">
-       <phpunit file="${project.basedir}/tests">
+       <phpunit basedir="${project.basedir}/tests">
            <filter>
                 <whitelist>
                     <directory suffix=".php">${project.basedir}</directory>
