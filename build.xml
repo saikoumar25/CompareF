@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TestJenkins" default="ci" basedir=".">
+    <property name="source" value="src" />
+    <target name="prepare">
+        <mkdir dir="${project.basedir}/build/api" />
+        <mkdir dir="${project.basedir}/build/code-browser" />
+        <mkdir dir="${project.basedir}/build/coverage" />
+        <mkdir dir="${project.basedir}/build/logs" />
+        <mkdir dir="${project.basedir}/build/pdepend" />
+    </target>
+
+    <target name="ci"
+        description="Tâche principale d'intégration continue"
+        depends="clean,qa"
+    />
+
+    <target name="clean" description="Vide les répertoires d'artefacts">
+          <delete dir="${project.basedir}/build/api" />
+          <delete dir="${project.basedir}/build/code-browser" />
+          <delete dir="${project.basedir}/build/coverage" />
+          <delete dir="${project.basedir}/build/logs" />
+          <delete dir="${project.basedir}/build/pdepend" />
+          
+          <mkdir dir="${project.basedir}/build/api" />
+          <mkdir dir="${project.basedir}/build/code-browser" />
+          <mkdir dir="${project.basedir}/build/coverage" />
+          <mkdir dir="${project.basedir}/build/logs" />
+          <mkdir dir="${project.basedir}/build/pdepend" />
+      </target>
+
+    <target name="qa" description="Lance les outils d'analyse">
+      <phingcall target="pdepend" />
+    </target>
+    
+    <target name="pdepend">
+        <phpdepend file="${project.basedir}/${source}/www">
+            <logger type="jdepend-xml" outfile="${project.basedir}/build/logs/jdepend.xml" />
+            <logger type="jdepend-chart" outfile="${project.basedir}/build/pdepend/dependencies.svg" />
+            <logger type="overview-pyramid" outfile="${project.basedir}/build/pdepend/overview-pyramid.svg" />
+        </phpdepend>
+    </target>
+
+</project>
