@@ -44,7 +44,7 @@
     
     <target name="phpmd">
         <phpmd file="${project.basedir}/${source}">
-            <logger type="xml" outfile="${project.basedir}/build/phpmd.xml" />
+            <formatter type="xml" outfile="${project.basedir}/build/phpmd.xml" />
         </phpmd>
     </target>
     <target name="phpunit">
@@ -54,7 +54,7 @@
               <include name="*Test.php"/>
             </fileset>
           </batchtest>
-            <formatter type="xml" todir="report" outfile="${project.basedir}/build/logfile.xml"/>
+            <formatter type="xml" outfile="${project.basedir}/build/logfile.xml"/>
         </phpunit>
     </target>
 
